@@ -28,7 +28,11 @@ export default function HeaderLinks(props) {
   const { scrollItems, scrollingBody } = props;
   const classes = useStyles();
   const scrollTo = (element) => {
-    document.getElementsByClassName(element)[0].scrollIntoView();
+    const target = document.getElementsByClassName(element)[0];
+    window.scrollTo({
+      top: target.offsetTop + target.clientHeight,
+      behavior: "smooth",
+    });
   };
 
   return (

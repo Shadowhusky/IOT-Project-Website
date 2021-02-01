@@ -3,6 +3,7 @@ import React, { useRef, useState, useEffect } from "react";
 import classNames from "classnames";
 // @material-ui/core components
 import { makeStyles } from "@material-ui/core/styles";
+import Fade from "@material-ui/core/Fade";
 
 // @material-ui/icons
 
@@ -41,11 +42,15 @@ export default function LandingPage(props) {
   }, []);
 
   const scrollTo = (element) => {
-    document.getElementsByClassName(element)[0].scrollIntoView();
+    const target = document.getElementsByClassName(element)[0];
+    window.scrollTo({
+      top: target.offsetTop + target.clientHeight,
+      behavior: "smooth",
+    });
   };
 
   return (
-    <div ref={scrollingBody}>
+    <div className={classes["landingpage-animated"]} ref={scrollingBody}>
       <Header
         color="transparent"
         routes={dashboardRoutes}
@@ -97,7 +102,7 @@ export default function LandingPage(props) {
       <div className={classNames(classes.main, classes.mainRaised)}>
         <div className={classes.container}>
           <ProductSection className={scrollItems[1]} />
-          <VideoSection className={scrollItems[2]}/>
+          <VideoSection className={scrollItems[2]} />
           <TeamSection className={scrollItems[0]} />
           {/* <WorkSection /> */}
         </div>

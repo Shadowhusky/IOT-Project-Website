@@ -30,7 +30,19 @@ const landingPageStyle = {
     borderRadius: "6px",
     boxShadow:
       "0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2)"
-  }
+  },
+  "landingpage-animated": {
+    animation: "$landingpage-appear-animation 2s"
+  },
+  "@keyframes landingpage-appear-animation": {
+    "0%": {
+      opacity: 0,
+      transform: "blur(20px)"
+    },
+    "100%": {
+      opacity: 1
+    }
+  },
 };
 
 export default landingPageStyle;
