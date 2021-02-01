@@ -5,16 +5,15 @@ import styles from "assets/jss/nextjs-material-kit/pages/landingPageSections/vid
 
 const useStyles = makeStyles(styles);
 
-
 export default function TeamSection(props) {
   const { ...rest } = props;
   const classes = useStyles();
-  
+
   return (
     <div className={classes.section + " " + rest.className}>
       <iframe
-        width="800"
-        height="500"
+        width="750"
+        height="480"
         src="https://www.youtube.com/embed/dQw4w9WgXcQ"
         frameborder="0"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
