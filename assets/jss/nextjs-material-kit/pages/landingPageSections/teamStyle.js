@@ -45,6 +45,17 @@ const teamStyle = {
   },
   margin5: {
     margin: "5px"
+  },
+  "@media (max-width:800px)": {
+    customImgStyle: {
+      width: "85%",
+      margin: "auto",
+      display: "block"
+    },
+    title: {
+      fontSize: "2rem",
+      textAlign: "center"
+    }
   }
 };
 

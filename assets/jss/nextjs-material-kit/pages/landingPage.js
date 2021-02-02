@@ -34,6 +34,17 @@ const landingPageStyle = {
   "landingpage-animated": {
     animation: "$landingpage-appear-animation 2s"
   },
+  "@media (max-width:800px)": {
+    title: {
+      fontSize: "2.5rem"
+    },
+    maincontainer: {
+      padding: "0 30px"
+    },
+    maintext: {
+      fontSize: "1.05rem"
+    }
+  },
   "@keyframes landingpage-appear-animation": {
     "0%": {
       opacity: 0,

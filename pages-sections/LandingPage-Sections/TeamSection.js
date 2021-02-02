@@ -30,7 +30,8 @@ export default function TeamSection(props) {
   const imageClasses = classNames(
     classes.imgRaised,
     classes.imgRoundedCircle,
-    classes.imgFluid
+    classes.imgFluid,
+    classes.customImgStyle
   );
   return (
     <div className={classes.section} {...rest}>

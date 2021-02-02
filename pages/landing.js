@@ -71,11 +71,11 @@ export default function LandingPage(props) {
         {...rest}
       />
       <Parallax filter responsive image={require("assets/img/landing-bg.jpeg")}>
-        <div className={classes.container}>
+        <div className={classNames(classes.container, classes.maincontainer)}>
           <GridContainer>
             <GridItem xs={12} sm={12} md={6}>
               <h1 className={classes.title}>Smart City - Urban Farming</h1>
-              <h4>
+              <h4 className={classes.maintext}>
                 As urban population grows in many parts of the world so does the
                 demand for food. This project looks into designing an IoT system
                 for sustainable Urban Farming to help feed the growing
