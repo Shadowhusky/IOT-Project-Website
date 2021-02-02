@@ -41,22 +41,22 @@ export default function HeaderLinks(props) {
     <List className={classes.list}>
       <ListItem className={classes.listItem}>
         <Button
-          onClick={() => scrollTo(scrollItems?.[0])}
-          color="transparent"
-          target="_blank"
-          className={classes.navLink}
-        >
-          <Icon className={classes.icons}>group</Icon> People
-        </Button>
-      </ListItem>
-      <ListItem className={classes.listItem}>
-        <Button
           onClick={() => scrollTo(scrollItems?.[1])}
           color="transparent"
           target="_blank"
           className={classes.navLink}
         >
           <Icon className={classes.icons}>description</Icon> Description
+        </Button>
+      </ListItem>
+      <ListItem className={classes.listItem}>
+        <Button
+          onClick={() => scrollTo(scrollItems?.[0])}
+          color="transparent"
+          target="_blank"
+          className={classes.navLink}
+        >
+          <Icon className={classes.icons}>group</Icon> People
         </Button>
       </ListItem>
     </List>
