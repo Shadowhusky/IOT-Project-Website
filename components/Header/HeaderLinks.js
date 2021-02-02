@@ -30,7 +30,9 @@ export default function HeaderLinks(props) {
   const scrollTo = (element) => {
     const target = document.getElementsByClassName(element)[0];
     window.scrollTo({
-      top: target.offsetTop + target.clientHeight,
+      top:
+        target.offsetParent?.offsetTop +
+        target.offsetTop - 70,
       behavior: "smooth",
     });
   };

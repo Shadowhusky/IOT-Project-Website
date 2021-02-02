@@ -44,7 +44,9 @@ export default function LandingPage(props) {
   const scrollTo = (element) => {
     const target = document.getElementsByClassName(element)[0];
     window.scrollTo({
-      top: target.offsetTop + target.clientHeight,
+      top:
+        document.querySelector("._videoSection").offsetParent?.offsetTop +
+        document.querySelector("._videoSection").offsetTop - 150,
       behavior: "smooth",
     });
   };

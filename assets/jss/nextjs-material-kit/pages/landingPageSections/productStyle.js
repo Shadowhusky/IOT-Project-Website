@@ -14,6 +14,11 @@ const productStyle = {
   },
   description: {
     color: "#999"
+  },
+  "@media (max-width:800px)": {
+    section: {
+      padding: "0 0 60px"
+    }
   }
 };
 

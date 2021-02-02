@@ -48,7 +48,7 @@ const teamStyle = {
   },
   "@media (max-width:800px)": {
     customImgStyle: {
-      width: "85%",
+      width: "80%",
       margin: "auto",
       display: "block"
     },
