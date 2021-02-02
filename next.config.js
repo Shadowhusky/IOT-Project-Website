@@ -13,6 +13,6 @@ module.exports = withPlugins([[withSass], [withImages]], {
   },
   // Use the CDN in production and localhost for development.
   assetPrefix: isProd
-    ? "https://cdn.statically.io/gh/Shadowhusky/shadowhusky.github.io/IOT-Project-Website/"
+    ? "https://cdn.statically.io/gh/Shadowhusky/shadowhusky.github.io/IOT-Project-Website//"
     : "",
 });
