@@ -10,7 +10,8 @@
     "start": "next start",
     "export": "next export",
     "install:clean": "rm -rf node_modules/ && rm -rf package-lock.json && rm -rf .next/ && npm install && npm run dev",
-    "deploy": "next build; next export; firebase deploy;",
+    "deploy": "next build; next export;",
+    "pub": "next build; next export; firebase deploy",
     "deploy-gh": "gh-pages -d out"
   },
   "repository": {
