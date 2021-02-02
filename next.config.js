@@ -13,6 +13,6 @@ module.exports = withPlugins([[withSass], [withImages]], {
   },
   // Use the CDN in production and localhost for development.
   assetPrefix: isProd
-    ? "https://cdn.statically.io/gh/NaveenDA/naveenda.github.io/gh-pages/"
+    ? "https://cdn.statically.io/gh/Shadowhusky/shadowhusky.github.io/gh-pages/"
     : "",
 });
