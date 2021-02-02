@@ -145,7 +145,7 @@ form {
     align-items: center; }
   .body-page-transition #page-transition > div:after {
     content: "";
-    background-image: url(https://cdn.statically.io/gh/Shadowhusky/shadowhusky.github.io/IOT-Project-Website///_next/static/images/bg7-f8b4415db535870ad989fcf4489475d8.jpg);
+    background-image: url(https://cdn.statically.io/gh/Shadowhusky/IOT-Project-Website/gh-pages//_next/static/images/bg7-f8b4415db535870ad989fcf4489475d8.jpg);
     background-size: cover;
     position: fixed;
     z-index: 9998;
