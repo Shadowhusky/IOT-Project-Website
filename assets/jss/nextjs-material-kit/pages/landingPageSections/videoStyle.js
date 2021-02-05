@@ -13,7 +13,7 @@ const videoStyle = {
       margin: "15px auto 110px",
       padding: "0",
       height: "200px",
-      width: "90%"
+      width: "100%"
     },
     video: {
       width: "100%",

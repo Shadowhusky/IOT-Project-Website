@@ -13,6 +13,14 @@ import InfoArea from "components/InfoArea/InfoArea.js";
 
 import styles from "assets/jss/nextjs-material-kit/pages/landingPageSections/productStyle.js";
 
+// Resources
+import app_bg from "assets/img/app_bg.png";
+import app_0 from "assets/img/app_0.png";
+import app_1 from "assets/img/app_1.png";
+import app_2 from "assets/img/app_2.png";
+
+import Fade from "react-reveal/Fade";
+
 const useStyles = makeStyles(styles);
 
 export default function ProductSection(props) {
@@ -62,6 +70,35 @@ export default function ProductSection(props) {
             />
           </GridItem>
         </GridContainer>
+      </div>
+      <div className={classes.mockupcontainer}>
+        <img className={classes.mockupbg} src={app_bg} />
+        <div className={classes.mockupimgcontainer}>
+          <Fade right>
+            <div className={classes.mockupblock}>
+              <img className={classes.mockupimg} src={app_0} />
+              <p className={classes.mockuptext}>
+                Choose Your own plant From 1000+ seeds
+              </p>
+            </div>
+          </Fade>
+          <Fade left>
+            <div className={classes.mockupblock}>
+              <img className={classes.mockupimg} src={app_1} />
+              <p className={classes.mockuptext}>
+                When your little plant feel thirsty, watering it!
+              </p>
+            </div>
+          </Fade>
+          <Fade right>
+            <div className={classes.mockupblock}>
+              <img className={classes.mockupimg} src={app_2} />
+              <p className={classes.mockuptext}>
+                Monitoring the status of the plant, in real time
+              </p>
+            </div>
+          </Fade>
+        </div>
       </div>
     </div>
   );

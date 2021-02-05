@@ -17,7 +17,7 @@ export default function TeamSection(props) {
         src="https://www.youtube.com/embed/dQw4w9WgXcQ"
         frameBorder="0"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        allowfullscreen
+        allowFullScreen
         className={classes.video}
       ></iframe>
     </div>

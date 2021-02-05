@@ -12,7 +12,7 @@ module.exports = withPlugins([[withSass], [withImages]], {
     return config;
   },
   // Use the CDN in production and localhost for development.
-  assetPrefix: isProd
-    ? "https://cdn.statically.io/gh/Shadowhusky/IOT-Project-Website/gh-pages/"
-    : "",
+  // assetPrefix: isProd
+  //   ? "https://cdn.statically.io/gh/Shadowhusky/IOT-Project-Website/gh-pages/"
+  //   : "",
 });
