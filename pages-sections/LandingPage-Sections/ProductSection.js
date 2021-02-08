@@ -19,7 +19,19 @@ import app_0 from "assets/img/app_0.png";
 import app_1 from "assets/img/app_1.png";
 import app_2 from "assets/img/app_2.png";
 
+import desc_0 from "assets/img/desc_0.png";
+import desc_1 from "assets/img/desc_1.png";
+import desc_2 from "assets/img/desc_2.png";
+import desc_3 from "assets/img/desc_3.png";
+import desc_4 from "assets/img/desc_4.png";
+import desc_5 from "assets/img/desc_5.png";
+import desc_6 from "assets/img/desc_6.png";
+import desc_7 from "assets/img/desc_7.png";
+import desc_8 from "assets/img/desc_8.png";
+import desc_9 from "assets/img/desc_9.png";
+
 import Fade from "react-reveal/Fade";
+import Reveal from "react-reveal/Reveal";
 
 const useStyles = makeStyles(styles);
 
@@ -71,6 +83,14 @@ export default function ProductSection(props) {
           </GridItem>
         </GridContainer>
       </div>
+      <div className={classes.descriptionContainer}>
+        <img src={desc_0}></img>
+        <img src={desc_1}></img>
+        <img src={desc_9}></img>
+        <Reveal effect={classes.descImageAnimated}>
+          <img src={desc_5} className={classes.descImage_app} />
+        </Reveal>
+      </div>
       <div className={classes.mockupcontainer}>
         <img className={classes.mockupbg} src={app_bg} />
         <div className={classes.mockupimgcontainer}>
@@ -99,6 +119,14 @@ export default function ProductSection(props) {
             </div>
           </Fade>
         </div>
+      </div>
+      <div className={classes.descriptionContainer}>
+        <img src={desc_2}></img>
+        <img src={desc_4}></img>
+        <img src={desc_3}></img>
+        <img src={desc_6}></img>
+        <img src={desc_7}></img>
+        <img src={desc_8}></img>
       </div>
     </div>
   );
