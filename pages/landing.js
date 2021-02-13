@@ -28,6 +28,8 @@ const dashboardRoutes = [];
 
 const useStyles = makeStyles(styles);
 
+const videoURL = "https://drive.google.com/file/d/1QNTorBOb2ArzmIFiLWrBlAW_nGax1pb7/view?usp=sharing";
+
 export default function LandingPage(props) {
   const classes = useStyles();
   const { ...rest } = props;
@@ -35,7 +37,7 @@ export default function LandingPage(props) {
   const scrollingBody = useRef(null);
   const [loadingState, setLoadingState] = useState(true);
 
-  const scrollItems = ["_teamSection", "_productSection", "_videoSection"];
+  const scrollItems = ["_teamSection", ["_productSection", "_appSection", "_businessSection"], "_videoSection"];
 
   useEffect(() => {
     setLoadingState(false);
@@ -76,7 +78,7 @@ export default function LandingPage(props) {
         <div className={classNames(classes.container, classes.maincontainer)}>
           <GridContainer>
             <GridItem xs={12} sm={12} md={6}>
-              <h1 className={classes.title}>Smart City (Q-Farms)</h1>
+              <h1 className={classes.title}>Q-Farms</h1>
               <h4 className={classes.maintext}>
                 As urban population grows in many parts of the world so does the
                 demand for food. This project looks into designing an IoT system
@@ -92,7 +94,7 @@ export default function LandingPage(props) {
                 size="lg"
                 target="_blank"
                 rel="noopener noreferrer"
-                onClick={() => scrollTo(scrollItems?.[2])}
+                onClick={() => window.open(videoURL)}
               >
                 <i className="fas fa-play" />
                 Watch video
@@ -104,7 +106,7 @@ export default function LandingPage(props) {
       <div className={classNames(classes.main, classes.mainRaised)}>
         <div className={classes.container}>
           <ProductSection className={scrollItems[1]} />
-          <VideoSection className={scrollItems[2]} />
+          {/* <VideoSection className={scrollItems[2]} /> */}
           <TeamSection className={scrollItems[0]} />
           {/* <WorkSection /> */}
         </div>

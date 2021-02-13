@@ -2,7 +2,7 @@ const videoStyle = {
   section: {
     display: 'flex',
     justifyContent: 'center',
-    padding: "20px 0px 160px"
+    padding: "5rem 0px 5rem"
   },
   video: {
    borderRadius: "20px",

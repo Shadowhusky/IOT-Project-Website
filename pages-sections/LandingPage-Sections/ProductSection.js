@@ -3,15 +3,17 @@ import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
 
 // @material-ui/icons
-import Chat from "@material-ui/icons/Chat";
-import VerifiedUser from "@material-ui/icons/VerifiedUser";
-import Fingerprint from "@material-ui/icons/Fingerprint";
+import FlashOn from "@material-ui/icons/FlashOn";
+import MoneyOff from "@material-ui/icons/MoneyOff";
+import SportsEsports from "@material-ui/icons/SportsEsports";
 // core components
 import GridContainer from "components/Grid/GridContainer.js";
 import GridItem from "components/Grid/GridItem.js";
 import InfoArea from "components/InfoArea/InfoArea.js";
 
 import styles from "assets/jss/nextjs-material-kit/pages/landingPageSections/productStyle.js";
+
+import classnames from "classnames";
 
 // Resources
 import app_bg from "assets/img/app_bg.png";
@@ -29,6 +31,7 @@ import desc_6 from "assets/img/desc_6.png";
 import desc_7 from "assets/img/desc_7.png";
 import desc_8 from "assets/img/desc_8.png";
 import desc_9 from "assets/img/desc_9.png";
+import desc_10 from "assets/img/desc_10.png";
 
 import Fade from "react-reveal/Fade";
 import Reveal from "react-reveal/Reveal";
@@ -37,18 +40,19 @@ const useStyles = makeStyles(styles);
 
 export default function ProductSection(props) {
   const { ...rest } = props;
+  const classNames = rest.className;
   const classes = useStyles();
   return (
-    <div className={classes.section + " " + rest.className}>
+    <div className={classes.section + " " + classNames[0]}>
       <GridContainer justify="center">
         <GridItem xs={12} sm={12} md={8}>
           <h2 className={classes.title}>Let{"'"}s talk product</h2>
           <h5 className={classes.description}>
-            This is the paragraph where you can write more details about your
-            product. Keep you user engaged by providing meaningful information.
-            Remember that by this time, the user is curious, otherwise he wouldn
-            {"'"}t scroll to get here. Add a button if you want the user to see
-            more.
+            Quantum Farms’s mission is to provide average consumers (being the
+            end user) that might be potential gardeners living in urban cities
+            with affordable smart IoT urban farming device kits of growing their
+            own produce in their homes as a replacement for the conventional
+            open field farming. more.
           </h5>
         </GridItem>
       </GridContainer>
@@ -56,27 +60,27 @@ export default function ProductSection(props) {
         <GridContainer>
           <GridItem xs={12} sm={12} md={4}>
             <InfoArea
-              title="Free Chat"
-              description="Divide details about your product or agency work into parts. Write a few lines about each one. A paragraph describing a feature will be enough."
-              icon={Chat}
+              title="Actuators"
+              description="Our smart IoT urban farming device kits include an integrated IoT system which built-in actuators to attend to the plants at any time of the day immediately."
+              icon={FlashOn}
               iconColor="info"
               vertical
             />
           </GridItem>
           <GridItem xs={12} sm={12} md={4}>
             <InfoArea
-              title="Verified Users"
-              description="Divide details about your product or agency work into parts. Write a few lines about each one. A paragraph describing a feature will be enough."
-              icon={VerifiedUser}
+              title="Free to start"
+              description="The smart IoT urban farming device kit comes with a freemium application ready to be installed in any preferred mobile/desktop device of our customer."
+              icon={MoneyOff}
               iconColor="success"
               vertical
             />
           </GridItem>
           <GridItem xs={12} sm={12} md={4}>
             <InfoArea
-              title="Fingerprint"
-              description="Divide details about your product or agency work into parts. Write a few lines about each one. A paragraph describing a feature will be enough."
-              icon={Fingerprint}
+              title="Interactive App"
+              description="Enjoy using our application just like playing a game, easy to take control and have fun, even for kids."
+              icon={SportsEsports}
               iconColor="danger"
               vertical
             />
@@ -88,7 +92,10 @@ export default function ProductSection(props) {
         <img src={desc_1}></img>
         <img src={desc_9}></img>
         <Reveal effect={classes.descImageAnimated}>
-          <img src={desc_5} className={classes.descImage_app} />
+          <img
+            src={desc_5}
+            className={classnames(classes.descImage_app, classNames[1])}
+          />
         </Reveal>
       </div>
       <div className={classes.mockupcontainer}>
@@ -121,12 +128,13 @@ export default function ProductSection(props) {
         </div>
       </div>
       <div className={classes.descriptionContainer}>
-        <img src={desc_2}></img>
-        <img src={desc_4}></img>
-        <img src={desc_3}></img>
-        <img src={desc_6}></img>
-        <img src={desc_7}></img>
-        <img src={desc_8}></img>
+        <img src={desc_2} />
+        <img src={desc_4} className={classNames[2]} />
+        <img src={desc_3} />
+        <img src={desc_6} />
+        <img src={desc_7} />
+        <img src={desc_8} />
+        <img src={desc_10} className={classes.logo} />
       </div>
     </div>
   );

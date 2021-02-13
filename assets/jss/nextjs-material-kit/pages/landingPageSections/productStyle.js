@@ -80,6 +80,10 @@ const productStyle = {
     animation: "$img-rotate-animation 0.5s reverse forwards",
     "animation-timing-function": "ease-in",
   },
+  logo: {
+    width: "40% !important",
+    margin: "20rem auto 18rem!important"
+  },
   "@media (max-width:800px)": {
     mockupimgcontainer: {
       display: "none",
@@ -96,6 +100,10 @@ const productStyle = {
       },
       margin: "2rem 0 1rem"
     },
+    logo: {
+      width: "75% !important",
+      margin: "5rem auto 3rem!important"
+    }
   },
   "@keyframes img-rotate-animation": {
     to: {

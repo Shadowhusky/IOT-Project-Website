@@ -46,7 +46,9 @@ export default function TeamSection(props) {
               <h4 className={classes.cardTitle}>
                 Samiollah HABIBI
                 <br />
-                <small className={classes.smallTitle}>Team Member</small>
+                <small className={classes.smallTitle}>
+                  Group Member{" "}
+                </small>
               </h4>
               <CardFooter className={classes.justifyCenter}>
                 <Button
@@ -69,7 +71,7 @@ export default function TeamSection(props) {
                 Yuxuan Liao
                 <br />
                 <small className={classes.smallTitle}>
-                  Front-End Developer
+                  Group Member
                 </small>
               </h4>
               <CardFooter className={classes.justifyCenter}>
